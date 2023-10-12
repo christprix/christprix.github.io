@@ -295,7 +295,8 @@ a {
     font-size: 17px;
   }
 
-  .intro-paragraph {
+  .intro-paragraph,
+  .project-description {
     font-size: 13px;
   }
 
