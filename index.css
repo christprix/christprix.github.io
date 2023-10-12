@@ -228,6 +228,13 @@ a {
   height: 375px;
 }
 
+.intro-paragraph {
+  font-family: 'Comfortaa';
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 600px) {
   div.name {
     font-size: 50px;
@@ -243,6 +250,10 @@ a {
   }
 
   .intro-paragraph {
-    font-size: 9px;
+    font-size: 13px;
+  }
+
+  .hello-world {
+    font-size: 20px;
   }
 }
