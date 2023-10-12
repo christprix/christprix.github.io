@@ -164,6 +164,7 @@ a {
   flex-direction: column;
   display: flex;
   justify-content: space-evenly;
+
 }
 
 .project-photo {
@@ -212,5 +213,28 @@ a {
 
   100% {
     opacity: 1;
+  }
+}
+
+.name {
+  font-family: 'Comfortaa';
+  font-size: 90px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resume {
+  width: 500px;
+  height: 375px;
+}
+
+@media screen and (max-width: 600px) {
+  div.name {
+    font-size: 50px;
+  }
+
+  .resume {
+    width: 300px;
+    height: 200px;
   }
 }
