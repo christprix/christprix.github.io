@@ -237,4 +237,12 @@ a {
     width: 300px;
     height: 200px;
   }
+
+  .intro {
+    font-size: 30px;
+  }
+
+  .intro-paragraph {
+    font-size: 9px;
+  }
 }
