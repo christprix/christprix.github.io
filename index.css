@@ -140,6 +140,7 @@ a {
 }
 
 .projects {
+  flex-wrap: inherit;
   z-index: 3;
   position: relative;
   display: flex;
@@ -171,6 +172,7 @@ a {
   height: 189px;
   max-height: auto;
   border-radius: 5px;
+  align-self: center;
 }
 
 .project i {
@@ -182,7 +184,8 @@ a {
 .border-project {
   border-left: 1px solid rgba(0, 0, 0, .1);
   border-right: 1px solid rgba(0, 0, 0, .1);
-
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 .coding-languages {
