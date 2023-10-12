@@ -152,6 +152,10 @@ a {
   box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
 }
 
+.project-background {
+  height: max-content;
+}
+
 .project {
   text-align: center;
   font-family: 'Comfortaa';
@@ -192,6 +196,10 @@ a {
   max-width: 45px;
   width: 100%;
   max-height: auto;
+}
+
+.contact {
+  font-family: Comfortaa;
 }
 
 @keyframes fadeIn {

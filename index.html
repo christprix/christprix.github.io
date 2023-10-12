@@ -23,19 +23,18 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-light sticky-top justify-content-end" style="background-color: white; color:#1EDD88 ;">
-    <a class="navbar-brand" href="#"><img src="assets/IMG_0791 2.JPG" width="30" height="30" alt=""></a>
     <form class="form-inline mx-5">
-      <a class="nav-link" href="#">About</a>
-      <a class="nav-link" href="#">Skills</a>
-      <a class="nav-link" href="#">Projects</a>
-      <a class="nav-link" href="#">Contact Info</a>
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#project">Projects</a>
+      <a class="nav-link" href="#contact">Contact Info</a>
     </form>
   </nav>
   <div class="background">
     <!-- container -->
-    <div class="container" style="min-height:100vh;">
-      <div class="stars" id="particles-js">
-      </div>
+    <!-- <div class="stars" id="particles-js">
+    </div> -->
+    <div class="container" id="home" style="min-height:100vh;">
       <div class="d-flex" style="flex-direction: column; max-height: 100%;">
         <div class="section justify-content-center mt-5">
           <div style="font-family: 'Comfortaa'; font-size: 90px; display: flex; justify-content: space-evenly;">
@@ -89,7 +88,8 @@
     </div>
 
   </div>
-  <div class="about">
+  <!-- about -->
+  <div class="about" id="about">
     <h1 class="hidden" style="font-family: 'Comfortaa';">Hi, I'm Saint. Nice to meet you!</h1>
     <div class="container" style="font-family: 'Comfortaa'; font-size: 20px;display: flex; flex-direction: column;">
       <p class="hidden">I love what I do. Having dedicated the last 4 years to honing my skills in front-end
@@ -101,6 +101,7 @@
         I hope to take with me as I develop innovative products for my future clients. </p>
     </div>
     <div class="container justify-content-center" style="color: white;">
+      <!-- skills  -->
       <div class="skills">
         <i class="hidden fa-brands fa-html5 logo">
         </i>
@@ -123,73 +124,90 @@
       </div>
     </div>
   </div>
-  <div class="container justify-content-center mt-3" style="background: white; height: 600px;">
-    <div class="row justify-content-center">
-      <h2 style="font-family: Comfortaa;">Projects</h2>
-    </div>
-    <div class="row">
-      <div class="projects my-3">
-        <div class="project col-4">
-          <p class="my-3">To Infinity and Beyond</p>
-          <i class="fa-brands fa-airbnb fa-2xl"></i>
-          <img src="assets/infinity.png" class="project-photo" alt="" style="margin-bottom: 18px;">
-          <p>An AirBnB parody clone which allows users to rent out their personal
-            jetpacks.
-          </p>
-          <div class="coding-languages my-3">
-            <img src="assets/2560px-Ruby_On_Rails_Logo.svg.png" alt="">
-            <img src="assets/webpack.svg" alt="">
-            <img src="assets/CSS3_logo_and_wordmark.svg" alt="">
-            <img src="assets/HTML5_logo_and_wordmark.svg" alt="">
-            <img src="assets/javascript-1.svg" alt="">
-            <img src="assets/postgresql.svg" alt="">
+  <div class="project-background">
+    <div class="container justify-content-center mt-3" style="background: white; height: max-content;">
+      <div class="row justify-content-center my-4">
+        <h2 style="font-family: Comfortaa;" id="project">Projects</h2>
+      </div>
+      <div class="row">
+        <!-- projects  -->
+        <div class="projects my-3">
+          <div class="project col-4">
+            <p class="my-3">To Infinity and Beyond</p>
+            <i class="fa-brands fa-airbnb fa-2xl"></i>
+            <img src="assets/infinity.png" class="project-photo" alt="" style="margin-bottom: 18px;">
+            <p>An AirBnB parody clone which allows users to rent out their personal
+              jetpacks.
+            </p>
+            <div class="coding-languages my-3">
+              <img src="assets/2560px-Ruby_On_Rails_Logo.svg.png" alt="">
+              <img src="assets/webpack.svg" alt="">
+              <img src="assets/CSS3_logo_and_wordmark.svg" alt="">
+              <img src="assets/HTML5_logo_and_wordmark.svg" alt="">
+              <img src="assets/javascript-1.svg" alt="">
+              <img src="assets/postgresql.svg" alt="">
+            </div>
+            <a class="btn btn-primary" href="https://to-infinity-and-beyond-tellus-e2dda9b3898d.herokuapp.com/">
+              View Project
+            </a>
           </div>
-          <a class="btn btn-primary" href="https://to-infinity-and-beyond-tellus-e2dda9b3898d.herokuapp.com/">
-            View Project
-          </a>
-        </div>
-        <div class="project border-project col-4">
-          <p class="my-3">Tellus</p>
-          <i class="fa-solid fa-earth-americas fa-2xl"></i>
-          <img src="assets/tellus.png" class="project-photo" alt="">
-          <p>A new aggregator designed to allow users to follow
-            topics from news outlets from any country.
-          </p>
-          <div class="coding-languages my-3">
-            <img src="assets/2560px-Ruby_On_Rails_Logo.svg.png" alt="">
-            <img src="assets/CSS3_logo_and_wordmark.svg" alt="">
-            <img src="assets/HTML5_logo_and_wordmark.svg" alt="">
-            <img src="assets/javascript-1.svg" alt="">
-            <img src="assets/postgresql.svg" alt="">
+          <div class="project border-project col-4">
+            <p class="my-3">Tellus</p>
+            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+            <img src="assets/tellus.png" class="project-photo" alt="">
+            <p>A new aggregator designed to allow users to follow
+              topics from news outlets from any country.
+            </p>
+            <div class="coding-languages my-3">
+              <img src="assets/2560px-Ruby_On_Rails_Logo.svg.png" alt="">
+              <img src="assets/CSS3_logo_and_wordmark.svg" alt="">
+              <img src="assets/HTML5_logo_and_wordmark.svg" alt="">
+              <img src="assets/javascript-1.svg" alt="">
+              <img src="assets/postgresql.svg" alt="">
+            </div>
+            <a class="btn btn-primary" href="https://www.tellus-news.world/">
+              View Project
+            </a>
           </div>
-          <a class="btn btn-primary" href="https://www.tellus-news.world/">
-            View Project
-          </a>
-        </div>
-        <div class="project col-4">
-          <p class="my-3">NBA game tracker</p>
-          <i class="fa-solid fa-basketball fa-2xl"></i>
-          <img src="assets/gametracker.png" class="project-photo" alt="">
-          <p>An application that lets you choose a date and views the highlights of the
-            NBA games played that day.</p>
-          <div class="coding-languages my-3">
-            <img src="assets/sinatra.svg" alt="">
-            <img src="assets/Ruby_logo.svg" alt="">
-            <img src="assets/CSS3_logo_and_wordmark.svg" alt="">
-            <img src="assets/HTML5_logo_and_wordmark.svg" alt="">
-            <img src="assets/javascript-1.svg" alt="">
-            <img src="assets/sqlite.svg" alt="">
+          <div class="project col-4">
+            <p class="my-3">NBA game tracker</p>
+            <i class="fa-solid fa-basketball fa-2xl"></i>
+            <img src="assets/gametracker.png" class="project-photo" alt="">
+            <p>An application that lets you choose a date and views the highlights of the
+              NBA games played that day.</p>
+            <div class="coding-languages my-3">
+              <img src="assets/sinatra.svg" alt="">
+              <img src="assets/Ruby_logo.svg" alt="">
+              <img src="assets/CSS3_logo_and_wordmark.svg" alt="">
+              <img src="assets/HTML5_logo_and_wordmark.svg" alt="">
+              <img src="assets/javascript-1.svg" alt="">
+              <img src="assets/sqlite.svg" alt="">
+            </div>
+            <a class="btn btn-primary" href="#">
+              View Project
+            </a>
           </div>
-          <a class="btn btn-primary" href="#">
-            View Project
-          </a>
         </div>
       </div>
     </div>
   </div>
-  <!-- <i class="fa-solid fa-landmark fa-xl my-3"></i>
-    <i class="fa-solid fa-earth-asia fa-xl my-3"></i>
-    <i class="fa-solid fa-laptop-code fa-xl"></i> -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="row my-5 justify-content-center">
+        <!-- contact -->
+        <h1>Contact Me</h1>
+      </div>
+      <div class="row justify-content-center">
+        <p>If you would like to get in touch with me about a future project or just to say what's up feel to send me a
+          message! </p>
+        <p>Email: christprix@gmail.com</p>
+      </div>
+      <div class="container text-center">
+        <embed src="assets/ChristianSt_Resume .pdf" width="500" height="375" class="justify-content-center my-4"
+          type="application/pdf" style="z-index: 3;">
+      </div>
+    </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
