@@ -1,3 +1,16 @@
+.hello-world {
+  font-family: 'Comfortaa';
+  display: flex;
+  justify-content: center;
+}
+
+.hello-world b {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.hello-world-fadein {}
+
 .avatar {
   border-radius: 12px;
   max-width: 340px;
@@ -85,6 +98,40 @@ a {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.faded-out {
+  display: none;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 3s;
+}
+
+.faded-in {
+  display: block;
+  -webkit-animation: slide-down 2.3s ease-out;
+  -moz-animation: slide-down 3.3s ease-out;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .logo {
@@ -241,12 +288,12 @@ a {
   }
 
   .resume {
-    width: 300px;
-    height: 200px;
+    width: max-content;
+    height: 250px;
   }
 
   .intro {
-    font-size: 30px;
+    font-size: 17px;
   }
 
   .intro-paragraph {
@@ -255,5 +302,13 @@ a {
 
   .hello-world {
     font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 10px;
+  }
+
+  #project {
+    font-size: 1.5rem;
   }
 }
