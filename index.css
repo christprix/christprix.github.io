@@ -9,6 +9,20 @@
   margin-right: 5px;
 }
 
+.hello-world-sentence {
+  font-size: .1px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+
+.hello-world-sentence-visible {
+  font-size: 100%;
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
 
 .avatar {
   border-radius: 12px;
@@ -96,20 +110,6 @@ a {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-}
-
-.faded-out {
-  display: none;
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(-100%);
-  transition: all 3s;
-}
-
-.faded-in {
-  display: block;
-  -webkit-animation: slide-down 2.3s ease-out;
-  -moz-animation: slide-down 3.3s ease-out;
 }
 
 @-webkit-keyframes slide-down {

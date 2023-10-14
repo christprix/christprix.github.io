@@ -23,19 +23,44 @@ const about = document.querySelectorAll(".hidden")
 
 about.forEach((el) => observer.observe(el));
 
+const helloworldAppear = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('hello-world-sentence-visible')
+
+    }
+  })
+})
+
+
 // look for hello world div
-const helloWorld = document.querySelector(".hello-world-fadein")
+const helloWorld = document.querySelector(".hello-world-sentence")
 console.log(helloWorld);
-setTimeout(function () {
-  // find the div we want to add everything to
-  //write the string for the middle
-  // turn the string into an array
-  // then write a loop that is time based
-  // we need a counter that is where we are in the string/array
-  // we need a time for each loop to wait or start
-  //in the loop we need to add or completely rewrite the innerhtml of new div
-  // end the loop
-}, 1500);
+helloworldAppear.observe(helloWorld);
+
+
+// setTimeout(function () {
+//   // find the div we want to add everything to
+//   const helloWorld = document.querySelector(".hello-world-sentence")
+//   //write the string for the middle
+//   const sentence = "and welcome to my"
+//   // turn the string into an array
+//   const sentenceArray = sentence.split("")
+//   // then write a loop that is time based
+//   console.log(sentenceArray);
+
+//   const addLetters = sentenceArray.forEach(letter => {
+//     const letters = helloWorld.innerHTML
+//     console.log(letters);
+//     const addLetters = helloWorld.innerHTML = letters + letter
+//     setTimeout(addLetters, 2000);
+//   });
+//   // we need a counter that is where we are in the string/array
+//   // we need a time for each loop to wait or start
+//   //in the loop we need to add or completely rewrite the innerhtml of new div
+//   // end the loop
+// }, 1500);
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
