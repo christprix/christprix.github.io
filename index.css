@@ -4,17 +4,12 @@
   justify-content: center;
 }
 
-.hello-world b {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .hello-world-sentence {
   font-size: .1px;
   opacity: 0;
   filter: blur(5px);
   transform: translateY(-100%);
-  transition: all 2s;
+  transition: all 3s;
 }
 
 .hello-world-sentence-visible {
@@ -22,6 +17,8 @@
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .avatar {
@@ -112,25 +109,6 @@ a {
   transform: translateX(0);
 }
 
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 .logo {
   max-width: fit-content;
@@ -160,9 +138,25 @@ a {
   transition-delay: 1200ms;
 }
 
-/* .skills i {
-  display: flex;
-} */
+.programming-language:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.programming-language:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.programming-language:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.programming-language:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+.programming-language:nth-child(6) {
+  transition-delay: 1000ms;
+}
 
 .skills p:hover {
   opacity: 1;
