@@ -24,7 +24,6 @@
   background-color: #6E07F3;
   display: grid;
   place-items: center;
-  align-content: center;
   min-height: 550px;
   color: white;
   z-index: 2;
@@ -301,11 +300,12 @@ a {
   }
 
   .hello-world {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .nav-link {
-    font-size: 10px;
+    font-size: 12.5px;
+    padding: 0.5rem 0.5rem;
   }
 
   #project {
