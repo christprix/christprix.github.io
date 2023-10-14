@@ -8,7 +8,7 @@
   font-size: .1px;
   opacity: 0;
   filter: blur(5px);
-  transform: translateY(-100%);
+  /* transform: translateY(-100%); */
   transition: all 3s;
 }
 
@@ -16,7 +16,7 @@
   font-size: 100%;
   opacity: 1;
   filter: blur(0);
-  transform: translateY(0);
+  /* transform: translateY(0); */
   margin-left: 5px;
   margin-right: 5px;
 }
